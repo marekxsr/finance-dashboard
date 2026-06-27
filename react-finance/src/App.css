@@ -1,3 +1,10 @@
+/* Fix Vite centering issues */
+#root {
+  width: 100%;
+  margin: 0 auto;
+  font-weight: normal;
+}
+
 /*resetting default styles and setting global font*/
 *{
     margin: 0;
@@ -12,7 +19,7 @@ body{
 }
 
 /*dashboard container styling*/
-.dashboardcontainer{
+.dashboard-container{
     display: grid;
     grid-template-columns: 250px 1fr;
     min-height: 100vh;
@@ -95,4 +102,29 @@ body{
 }
 .red{
     color: #c0392b;
+}
+
+/* Style for delete button inside list items */
+.delete-btn {
+    cursor: pointer;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 2px 7px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 1;
+    transition: 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: #b91c1c;
+}
+
+.chart-card {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
